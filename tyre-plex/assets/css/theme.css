@@ -1,0 +1,1001 @@
+/*------------------------------------------------------------------
+01. Header Elements
+02. Main Content 
+03. Footer Elements
+-------------------------------------------------------------------*/
+
+/*--------------------------------------------------
+	01. Header Elements
+---------------------------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 6px 0px;
+}
+.navbar-tyreflexs{
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+}
+.navbar-brand {
+  padding-right: 1rem;
+}
+
+.navbar-nav {
+  gap: 2px;
+  padding-right: 30px;
+}
+.navbar-inner{
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-item:hover .nav-link.dropdown-toggle::after {
+  transform: rotate(180deg);
+  color: var(--secondary-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ed1c24' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+}
+
+.navbar .nav-item:hover .nav-link {
+  color: var(--secondary-color);
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+  font-size: 1.04rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar .nav-link.dropdown-toggle::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+  border: 0px !important;
+  width: 14px;
+  height: 14px;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  margin-left: 2px;
+  vertical-align: middle;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu {
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  padding: 0px;
+  border: none;
+  min-width: 15rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar .dropdown-menu li {
+  padding: 0;
+}
+
+.navbar .dropdown-menu li .dropdown-item {
+  padding: 10px;
+}
+
+.navbar .dropdown-menu li .dropdown-item:hover {
+  background-color: rgba(94, 64, 224, 0.06) !important;
+  color: var(--secondary-color);
+}
+
+.navbar .nav-right .header-btn {
+  text-decoration: none;
+  padding: 10px 18px 10px 8px;
+  border-radius: var(--border-large-radius);
+  margin: 0;
+  font-weight: 500;
+  height: 45px;
+}
+
+.navbar .nav-right .find-dealerbtn {
+  background: var(--primary-color);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  position: relative;
+}
+
+.navbar .nav-right {
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar .nav-right .find-dealerbtn i {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.navbar .nav-right .find-dealerbtn i,
+.navbar .nav-right .login-btn i {
+  margin-right: 8px;
+  font-size: 17px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.navbar .nav-right .login-btn {
+  color: var(--primary-color);
+  background-color: var(--gray-color);
+}
+
+.navbar .nav-right .login-btn i {
+  margin-right: 0;
+}
+
+/*--------------------------------------------------
+	01. Main Content
+---------------------------------------------------*/
+.dealer-info-wrapper {
+  margin-top: 80px;
+}
+
+.dealer-details-info h1 {
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+
+.dealer-details-info h1 .verfied-text {
+  color: #4ca72c;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.dealer-details-info h1 .verfied-text i {
+  font-size: 11px;
+  margin-right: 2px;
+}
+
+.dealer-moreInfo .moreinfo-row {
+  color: var(--light-text-color);
+  margin-bottom: 10px;
+  line-height: 1.6rem;
+}
+
+.dealer-moreInfo .moreinfo-row i {
+  margin-right: 8px;
+  position: relative;
+  font-size: 16px;
+}
+
+.dealer-rating {
+  margin-bottom: 15px;
+}
+
+.dealer-rating .total-ratingnum {
+  border-radius: var(--border-large-radius);
+  overflow: hidden;
+  min-width: 7rem;
+}
+
+.dealer-rating .total-ratingnum .rating-num {
+  font-size: 20px;
+  font-weight: 800;
+  min-height: 40px;
+}
+
+.dealer-rating .total-ratingnum .rating-num i {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  color: #dc3545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dealer-rating .total-ratingnum .total-userRating {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.dealer-rating .write-review a {
+  background-color: var(--light-red-bg);
+  border-radius: var(--border-large-radius);
+  padding: 6px 12px 6px 12px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.photos-grid-container .main-photo.img-box {
+  height: 99%;
+}
+
+.photos-grid-container .img-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photos-grid-container .img-box {
+  height: 95%;
+  position: relative;
+}
+
+.photos-grid-container .img-box a img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hide-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.photos-grid-container .transparent-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 18%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+.photos-grid-container .transparent-box .caption {
+  margin-top: auto;
+  position: relative;
+  top: -10px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: rgb(164 164 164 / 98%) 0px 2px 8px 0px;
+  font-size: 13px;
+  gap: 5px;
+}
+
+.photos-grid-container .dealer-share-save {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.photos-grid-container .dealer-share-save button {
+  border: 1px solid #dadada;
+  background: var(--white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+  gap: 5px;
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  height: 35px;
+}
+
+.photos-grid-container .dealer-share-save button .sh-text {
+  font-weight: 500;
+}
+
+.photos-grid-container .dealer-share-save .dropdown .dropdown-toggle i {
+  color: var(--secondary-color);
+}
+
+.photos-grid-container .dealer-share-save .dropdown .dropdown-toggle::after {
+  border: 0;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu {
+  min-width: 18rem;
+  padding: 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  border: none;
+  margin-top: 14px !important;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu .share-dropdown-header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu .share-dropdown-links .dropdown-item {
+  padding: 9px 13px;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu .share-dropdown-links .dropdown-item img {
+  height: 32px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  object-fit: contain;
+  width: 32px;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu .share-dropdown-links .dropdown-item .share-in-text {
+  color: var(--light-text-color);
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.photos-grid-container .main-photo.img-box .dropdown .dropdown-menu .topicon {
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg) translateY(-65%);
+  box-shadow: 0 1px 8px rgb(0, 0, 0, 0.16);
+  background-color: #fff;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  z-index: -1;
+}
+
+/********** Deals section *************/
+.dealer-wrapper-inner {}
+
+.dealer-wrapper-inner .brand-list,
+.typre-soldcard {
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(36, 39, 44, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  flex-direction: column;
+  padding: 25px 20px;
+  gap: 18px;
+}
+
+.dealer-wrapper-inner .brand-list img {
+  height: 70px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.dealer-wrapper-inner .brand-list .tyre-brandname {
+  color: var(--light-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dealer-wrapper-inner .brand-list:hover {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in;
+}
+
+/********** Deals End section *************/
+
+/********** sold dealer  section *************/
+.typre-soldcard {
+  padding: 25px 10px;
+  position: relative;
+}
+
+.typre-soldcard .tyre-image {}
+
+.typre-soldcard .tyre-image img {
+  width: 100%;
+}
+
+.typre-soldcard .tyre-sold-deatils {
+  display: flex;
+  flex-direction: column;
+}
+
+.typre-soldcard .tyre-sold-deatils .tyre-brand img {
+  width: 90px;
+  height: 40px;
+  object-fit: contain;
+  padding: 0px 9px;
+}
+
+.typre-soldcard .tyre-sold-deatils .m-name {
+  color: var(--text-color);
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.typre-soldcard .tyre-sold-deatils .v-name {
+  color: var(--light-text-color);
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.typre-soldcard .tyre-sold-deatils .tyre-sold-rating {
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.typre-soldcard .tyre-sold-deatils .rating-bg {
+  background: #4ca72c;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
+.typre-soldcard .tyre-sold-deatils .rating-bg i {
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+.typre-soldcard .tyre-sold-deatils .offer-text {
+  color: #4ca72c;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.typre-soldcard .tyre-sold-deatils .review-text {
+  color: rgba(36, 39, 44, 0.7);
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.typre-soldcard .tyre-sold-deatils .price-wrapper {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 800;
+  gap: 2px;
+}
+
+.typre-soldcard .tyre-sold-deatils .curency-symbol {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.typre-soldcard .features {
+  margin-top: 20px;
+}
+
+.typre-soldcard .features li {
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+  white-space: normal;
+  width: 25%;
+}
+
+.typre-soldcard .features li img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.typre-soldcard .features li .feat-text {
+  color: var(--light-text-color);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  min-height: 20px;
+}
+
+.typre-soldcard .features .feature-icons-wrap {
+  height: 35px;
+  width: 35px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.typre-soldcard .warranty-ui {
+  position: absolute;
+  top: 20px;
+  width: 60px;
+  left: 8px;
+  z-index: 2;
+}
+
+.typre-soldcard .warranty-ui .waranty-icon {
+  color: #755611;
+  display: table-caption;
+  font-size: 7px;
+  font-weight: 700;
+  left: 0;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -4px;
+  white-space: break-spaces;
+  width: 55px;
+}
+
+.typre-soldcard .warranty-ui .wranty-text {
+  color: #755611;
+  display: table-caption;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 15px;
+  white-space: break-spaces;
+  width: 55px;
+  left: 46%;
+  transform: translateX(-50%);
+}
+
+.typre-soldcard {
+  margin-bottom: 20px;
+}
+
+.sold-card-container .sold-card {
+  display: none;
+}
+
+.sold-card-container .sold-card:nth-child(-n + 8) {
+  display: block;
+}
+
+#viewmore-dealer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.view-more-btnwrapper {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/********** sold dealer  section *************/
+
+/*===== Review section =============*/
+.dealer-review-head {
+  border: 1px solid #efefef;
+  margin-bottom: 30px;
+}
+
+.rating-middle-section {
+  padding: 40px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rating-middle-section .rating-text {
+  font-size: 18px;
+  color: var(--light-text-color);
+}
+
+.rating-middle-section .rating-text .rating {
+  font-size: 45px;
+  color: var(--text-color);
+}
+
+.rating-middle-section .rating-star i {
+  color: #f5a623;
+  font-size: 10px;
+  padding: 0px 2px;
+}
+
+.rating-middle-section .user-total-review {
+  margin-top: 20px;
+  color: var(--light-text-color);
+  opacity: 0.8;
+}
+
+.rating-review-right {
+  padding: 40px 40px;
+  justify-content: center;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+}
+
+.rating-review-right .rating-review-inner {
+  margin-top: 4px;
+}
+
+.rating-review-inner .rating-num {
+  font-weight: 500;
+}
+
+.rating-review-right .rating-review-inner span i {
+  color: #cdcdcd;
+  font-size: 11px;
+  margin-left: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.rating-review-inner .rating-progress {
+  margin-left: 8px;
+}
+
+.rating-review-inner .rating-progress .rating-percentage {
+  color: var(--light-text-color);
+  opacity: 0.8;
+  margin-left: 8px;
+  font-size: 13px;
+}
+
+.dealer-review-head .have-review {
+  padding: 40px 0px;
+}
+
+.dealer-review-head .have-review h5 {
+  margin-bottom: 20px;
+}
+
+.dealer-review-head .have-review a {
+  background: var(--gradient);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: var(--border-large-radius);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.review-main-content {
+  padding: 16px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.review-main-content .user-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.review-main-content .rating-stars .star-icons i {
+  color: #f5a623;
+  padding: 0px 2px;
+  margin-bottom: 5px;
+}
+
+.review-main-content .rating-stars .user-deails-inner .user-post-named {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.review-main-content .rating-stars .user-deails-inner .user-post-named .user-name {
+  font-weight: 800;
+}
+
+.review-main-content .rating-stars .user-deails-inner .user-post-named .posted-date {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.review-main-content .rating-stars .user-comment {
+  color: var(--light-text-color);
+  letter-spacing: 0.1px;
+  line-height: 23px;
+  max-width: 80%;
+}
+
+.reviews-container .review-main-content:last-of-type {
+  border-bottom: 0;
+}
+
+.modal-backdrop {
+  background-color: rgb(96 98 101 / 50%);
+  backdrop-filter: blur(2px);
+}
+
+.review-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.review-modal-content {
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  width: 45%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: 10000;
+}
+
+.review-modal.open {
+  display: block;
+  transform: translateX(0);
+}
+
+.review-modal-content {
+  padding: 40px 20px 20px 20px;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.review-main-content {
+  margin-bottom: 20px;
+}
+
+.modal-review-content .review-main-content .review-avatar-wrap .user-avatar img {
+  width: 35px;
+  height: 35px;
+}
+
+.modal-review-content .review-main-content .user-deails-inner .user-comment {
+  max-width: 100%;
+}
+
+.modal-review-content .review-main-content .rating-stars {
+  padding-left: 10px;
+}
+
+.review-modal-content .close-btn {
+  position: fixed;
+  top: 10px;
+  right: 34px;
+  border: 2px solid;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.review-modal-header h6 {
+  font-size: var(--font-heading);
+  font-weight: 800;
+}
+
+.view-more-reviewbtn {
+  color: var(--secondary-color);
+  font-size: var(--font-sub-heading);
+  font-weight: 600;
+  text-decoration: 2px solid underline;
+
+}
+
+/*------- End Review section -----*/
+
+/*--------------------------------------------------
+	03. Footer Elements
+---------------------------------------------------*/
+.tyre-flex-footer {
+  background: var(--white);
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.upper-footer {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.upper-footer .upper-footer-card {
+  border-right: 1px solid #e2e2e2;
+  padding: 26px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+}
+
+.upper-footer .upper-footer-card.borde-left {
+  border-left: 1px solid #e2e2e2;
+}
+
+.upper-footer .upper-footer-card img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.upper-footer .upper-footer-card .up-topheading {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.upper-footer .upper-footer-card p {
+  margin: 0;
+  color: var(--light-text-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.tyre-flex-footer .footer-column h5,
+.newsletter h5 {
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tyre-flex-footer .footer-column ul li {
+  padding: 5px 0px;
+}
+
+.tyre-flex-footer .footer-column ul li a,
+.newsletter p {
+  color: var(--light-text-color);
+  font-size: 0.96rem;
+  opacity: 0.8;
+}
+
+.form-elment {
+  position: relative;
+}
+
+.footer-bottom {
+  padding: 50px 0px 40px 0px;
+}
+.newsletter input {
+  border-radius: var(--border-large-radius);
+  padding: 15px 20px;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.newsletter button {
+  margin-top: 20px;
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  padding: 6px 16px 6px 10px;
+}
+.footer-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.footer-copyright p{
+    margin: 0;
+    color: var(--light-text-color);
+    font-size: 0.96rem;
+    opacity: 0.8;
+}
+.footer-copyright .follow-us-footer span{
+    color: var(--light-text-color);
+    font-size: 0.96rem;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+.footer-copyright .follow-us-footer a{
+    padding: 0px 7px;
+    color: var(--secondary-color);
+}
+.footer-copyright .follow-us-footer a i{
+    font-size: 16px;
+}
+
+.tab-row ul {
+  display: flex;
+  position: relative;
+}
+
+.tab-row {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 55px;
+}
+
+.tab-row ul {
+  margin: 0;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  height: 100%;
+  gap: 10px;
+}
+
+.tab-row li {
+  list-style: none;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+.tab-row a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 10px 15px 10px;
+  color: var(--text-color);
+  font-weight: 600;
+  position: relative;
+  opacity: 0.6;
+}
+
+.tab-row a:first-child,
+.tab-row li {
+  padding-left: 0;
+}
+
+.tab-row a::after {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  transition: 0.5 ease-in;
+  transition: dealy 0.5ms;
+}
+
+.tab-row a.active {
+  color: var(--secondary-color);
+  opacity: 1;
+}
+
+.tab-row a.active::after {
+  width: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tab-row::-webkit-scrollbar {
+  display: none;
+}
+
+
+.tab-row {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+@media (max-width: 767px) {
+  .tab-row {
+    overflow: auto;
+    user-elect: none;
+  }
+
+}

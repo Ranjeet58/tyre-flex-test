@@ -1,0 +1,40 @@
+[
+    {
+      "username": "Md Nasir",
+      "postdate": "Jul 28, 2024",
+      "usercomment": " Excellent service from start to finish. 100% satisfaction with the job, professionalism and overall service.We were delighted with your courteous , prompt and professional service. We would plan to reuse your services and recommend these to friends and family. You came to us as a recommendation and this proved accurate. ",
+      "image": "./assets/images/user-avatar.png"
+    },
+    {
+      "username": "Rohit Bhati",
+      "postdate": "Jul 27, 2024",
+      "usercomment": " Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend ",
+      "image": "./assets/images/user-avatar.png"
+    },
+    {
+      "username": "Pradeep Kumar ",
+      "postdate": "Jul 26, 2024",
+      "usercomment": "Best tyre shop in Indirapuram. Good dealing with customer. All types tyre available here. Price also responsible. Overall good experience ",
+      "image": "./assets/images/user-avatar.png"
+    },
+    {
+      "username": "Pardeep Kumar",
+      "postdate": "Jul 25, 2024",
+      "usercomment": "Best shoppe in Indirapuram. Good customer service. After sale service amazing. Overall nice experience ",
+      "image": "./assets/images/user-avatar.png"
+    },
+    {
+      "username": "Surjit Kumar",
+      "postdate": "Jul 24, 2024",
+      "usercomment": "Genuine and Authorized Tyre shop in indirapuram having latest manufactured stock. Well equipped workshop with professional staff. I change my care Tyre there, highly satisfied with service and lasted available stock.. Keep it up !!! ",
+    "image": "./assets/images/user-avatar.png"
+      
+    },
+    {
+        "username": "Rohit Bhati",
+        "postdate": "Jul 27, 2024",
+        "usercomment": " Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend ",
+        "image": "./assets/images/user-avatar.png"
+      }
+  ]
+  

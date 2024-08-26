@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyre-plex</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Preload and apply CSS -->
+  <link preload rel="stylesheet" href="./assets/css/common.css" as="style" />
+  <link  preload rel="stylesheet" href="./assets/css/theme.css" as="style" />
+  <link  rel="stylesheet" href="./assets/css/media.css" as="style" />
+</head>
+
+<body>
+  <!-- header -->
+  <main>
+    <!------------ Header --------------->
+    <header class="tyreflex-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+         <div class="nav-wrapleft">
+            <div class="nav-logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="bi bi-list"></i>
+              </span>
+              </button>
+              <a class="navbar-brand" href="index.html" >
+                <img class="img-fluid" src="assets/images/logo.png" alt="tyreplex" width="120" height="36" />
+              </a>
+            </div>
+            <a href="#" class="login-btn mobile-hide desktop-hide header-btn  align-items-center" role="button" title="login">
+              <i class="bi bi-person-circle"></i>
+            </a>
+         </div>
+       
+          <div class="navbar-tyreflexs" id="navbarSupportedContent">
+            <div class="navbackdrop" id="navBackdrop"></div>
+             <div class="navbar-inner">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Car types
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="back-btn">
+                      <a class="dropdown-item" href="#"><i class="bi bi-arrow-left"></i> Popular Car Tyre Brands</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">MRF Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">CEAT Tyres Developers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Goodyear Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Apollo Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bridgestone Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">JK Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Michelin Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">All car Tyres</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Bike types
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="back-btn">
+                      <a class="dropdown-item" href="#"><i class="bi bi-arrow-left"></i>Popular Bike Tyre Brands</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">MRF Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">CEAT Tyres Developers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Goodyear Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Apollo Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Bridgestone Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">JK Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Michelin Tyres</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Pirelli Tyres</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">All bike Tyres</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tyre pressure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Commercial Tyres</a>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Accessories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="back-btn">
+                      <a class="dropdown-item" href="#"><i class="bi bi-arrow-left"></i>Accessories</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Accessories</a></li>
+                    <li><a class="dropdown-item" href="#"> Batteries</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Alloys Wheels </a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="back-btn">
+                      <a class="dropdown-item" href="#"><i class="bi bi-arrow-left"></i>More</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Accessories</a></li>
+                    <li><a class="dropdown-item" href="#"> Batteries</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"> Alloys Wheels </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav-right d-flex mb-lg-0">
+                <li class="nav-item d-flex">
+                  <a href="#" class="find-dealerbtn header-btn d-flex align-items-center" title="find dealers"
+                    role="button">
+                    <i class="bi bi-shop"></i>
+                    <span> Find Dealers</span>
+                  </a>
+                </li>
+                <li class="d-flex nav-item">
+                  <a href="#" class="login-btn mobile-hide header-btn d-flex align-items-center" role="button" title="login">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Login</span>
+                  </a>
+                </li>
+              </ul>
+             </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--------- main content section ------->
+    <div class="main-wrapper">
+      <div class="container">
+        <!-- Dealer detais main section -->
+        <div class="row mx-sm-0">
+          <div class="dealer-info-wrapper bg-border-shadow" id="dealer-info-section">
+            <div class="row dealer-info-wrapper-row">
+              <div class="col-sm-12 col-md-5 col-lg-5 col-xs-12 dealer-details-info">
+                <h1 class="d-flex align-items-center heading">
+                  Shree Hemkunt Tyres and services
+                  <span class="d-flex align-items-center verfied-text">
+                    <i class="bi bi-patch-check-fill"></i>
+                    Verified
+                  </span>
+                </h1>
+                <div class="dealer-rating d-flex gap-2">
+                  <div class="total-ratingnum d-flex flex-column align-items-center text-center">
+                    <div class="rating-num w-100 d-flex align-items-center justify-content-center gap-1">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rating-text">4.9</span>
+                      </div>
+                      <div class="total-userRating">
+                        <span class="total-rating">(2278 Review)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="write-review">
+                    <a href="#" title="write-review" id="">Write a review</a>
+                  </div>
+                </div>
+                <div class="dealer-moreInfo">
+                  <div class="moreinfo-row dealer-location d-flex">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Plot Number-09 Ground Floor Cisf Campus road, Ahinsa
+                      Khand-02 Idirapuram, Ghaziabad, Uttar Pradesh,
+                      201014</span>
+                  </div>
+                  <div class="moreinfo-row dealer-location d-flex">
+                    <i class="bi bi-clock"></i>
+                    <span>Open - Monday to Sunday - 10:00AM to 8:00PM</span>
+                  </div>
+                </div>
+                <div class="store-direction mt-4">
+                  <a href="#" class="tyreflex-m-button" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                      <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                        width="10">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+
+                      <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    Get Direction
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7 col-lg-7 col-xs-12">
+                <div id="gallery" class="photos-grid-container gallery">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xs-12 pb-lef-0 pb-right-0 c-columnleft">
+                      <div class="main-photo img-box">
+                        <div class="dealer-share-save d-flex align-items-center gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center" title="share"
+                              type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-share"></i>
+                              <span class="sh-text">Share</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <div class="topicon"></div>
+                              <div class="share-dropdown-header">
+                                Share with your family & friends
+                              </div>
+                              <div class="share-dropdown-links">
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img fetchpriority="low" src="./assets/images/clipboard-icon.png"
+                                      alt="Copy to clipboard" decoding="async">
+                                    <span class="share-in-text">Copy to Clipboard</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img fetchpriority="low" src="./assets/images/facebook-icon.png" alt="Facebook"
+                                      decoding="async">
+                                    <span class="share-in-text">Facebook</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img fetchpriority="low" src="./assets/images/mail-icon.png" alt="Copy to clipboard"
+                                      decoding="async">
+                                    <span class="share-in-text">Mail</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">
+                                    <img fetchpriority="low" src="./assets/images/twitter-icon.png"
+                                      alt="Copy to clipboard" decoding="async">
+                                    <span class="share-in-text">Twitter</span>
+                                  </a>
+                                </li>
+                              </div>
+                            </ul>
+                          </div>
+                          <div class="save-ui">
+                            <button title="save" class="d-flex align-items-center">
+                              <i class="bi bi-suit-heart"></i>
+                              <span class="sh-text">Share</span>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image"><img
+                            src="./assets/images/deal-img1.jpg" alt="image" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xs-12 ps-0 c-columnright">
+                      <div class="row">
+                        <div class="col-md-12 mobile-hide">
+                          <div class="img-box">
+                            <a href="./assets/images/deal-img2.jpg" class="glightbox" data-glightbox="type: image"><img
+                                src="./assets/images/deal-img2.jpg" alt="image" />
+                            </a>
+                          </div>
+                        </div> 
+                        <div class="col-md-6 pe-0 mobile-half-ui">
+                          <div class="img-box">
+                            <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image">
+                              <img src="./assets/images/deal-img1.jpg" alt="image" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-md-6  mobile-half-ui pb-right-0">
+                          <div id="multi-link" class="img-box">
+                            <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image">
+                              <img src="./assets/images/deal-img1.jpg" alt="image" />
+                              <div class="transparent-box">
+                                <div class="caption d-flex align-items-center">
+                                  <i class="bi bi-grid-3x3-gap-fill"></i>
+                                  <span>Show all Photos</span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="more-img" class="extra-images-container hide-element">
+                    <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image"><img
+                        src="./assets/images/deal-img1.jpg" alt="image" /></a>
+                    <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image"><img
+                        src="./assets/images/deal-img1.jpg" alt="image" /></a>
+                    <a href="./assets/images/deal-img1.jpg" class="glightbox" data-glightbox="type: image"><img
+                        src="./assets/images/deal-img1.jpg" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stikcy row -->
+          <div class="sticky-sectioninfo px-sm-0">
+            <div class="scrollspy_row">
+              <div id="dealer-info-navigation">
+                <div class="tab-row" id="menu-center">
+                  <div class="container">
+                    <ul>
+                      <li>
+                        <a class="active" href="#dealsin">Deals in</a>
+                      </li>
+                      <li>
+                        <a href="#servicedOffer">Services offered by this dealer</a>
+                      </li>
+                      <li>
+                        <a href="#tyres-soldby-dealer" class="">Tyres sold by this Dealer</a>
+                      </li>
+                      <li>
+                        <a href="#review-wrap" class=""> Google Reviews</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dealer-wrapper-inner bg-border-shadow" id="dealsin">
+                <h4 class="sub-heading">Deals in</h4>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Ceat tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/ceat.png" alt="Ceat tyre">
+                          <div class="tyre-brandname">Ceat</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="MRF tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/mrf.png" alt="MRF tyre">
+                          <div class="tyre-brandname">MRF</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Apollo tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/apollo.png" alt="Apollo tyre">
+                          <div class="tyre-brandname">Apollo</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Bridgestone tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/bridgestone.png"
+                            alt="Bridgestone tyre">
+                          <div class="tyre-brandname">Bridgestone</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="JK tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/jk.png" alt="JK tyre">
+                          <div class="tyre-brandname">JK</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Michelin tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/michelin.png" alt="Michelin tyre">
+                          <div class="tyre-brandname">Michelin</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Yokohama tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/yokohama.png" alt="Yokohama tyre">
+                          <div class="tyre-brandname">Yokohama</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Goodyear tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/goodyear.png" alt="Goodyear tyre">
+                          <div class="tyre-brandname">Goodyear</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Kenda tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/kenda.png" alt="Kenda tyre">
+                          <div class="tyre-brandname">Kenda</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Pirelli tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/pirelli.png" alt="Pirelli tyre">
+                          <div class="tyre-brandname">Pirelli</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <a href="#" title="Continental tyre">
+                          <img decoding="async" loading="lazy" src="./assets/images/continental.png"
+                            alt="Continental tyre">
+                          <div class="tyre-brandname">Continental</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <div class="dealer-wrapper-inner bg-border-shadow" id="servicedOffer">
+                <h4 class="sub-heading">Services offered by this dealer</h4>
+                <div class="swiper serviceOffer">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <img decoding="async" width="100" height="100" loading="lazy"
+                          src="./assets/images/wheel-alignment-bal.png" alt="Wheel Balancing">
+                        <div class="tyre-brandname">Wheel Balancing</div>
+                        <a href="#" class="tyreflex-m-button" style="--clr: #7808d0">
+                          <span class="button__icon-wrapper">
+                            <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              class="button__icon-svg" width="10">
+                              <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                            </svg>
+
+                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                              class="button__icon-svg button__icon-svg--copy">
+                              <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          Book Now
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="brand-list">
+                        <img decoding="async" loading="lazy" src="./assets/images/wheel-alignment.png"
+                          alt="Wheel Alignment tyre">
+                        <div class="tyre-brandname">Wheel Alignment</div>
+                        <a href="#" class="tyreflex-m-button" style="--clr: #7808d0">
+                          <span class="button__icon-wrapper">
+                            <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                              class="button__icon-svg" width="10">
+                              <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                            </svg>
+
+                            <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                              class="button__icon-svg button__icon-svg--copy">
+                              <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </span>
+                          Book Now
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <!-- tyre sold setion -->
+              <div class="tyres-soldwrapper bg-border-shadow" id="tyres-soldby-dealer">
+                <h4 class="sub-heading">Tyres sold by this Dealer</h4>
+                <div class="row sold-card-container">
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-xs-12 col-lg-3 sold-card">
+                    <div class="typre-soldcard">
+                      <a href="#" title="Apollo AMAZER 4G LIFE 145/80 R13">
+                        <div class="warranty-ui">
+                          <img class="waranty-icon" decoding="async" alt="icon" src="./assets/images/warranty.svg"
+                            loading="eager">
+                          <div class="wranty-text">5</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0">
+                            <div class="tyre-image">
+                              <img src="./assets/images/apollo-trre.png" decoding="async" loading="lazy"
+                                alt="AMAZER 4G LIFE">
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-lg-6 ps-0 pe-0">
+                            <div class="tyre-sold-deatils">
+                              <div class="tyre-brand">
+                                <img decoding="async" alt="icon" src="./assets/images/apollo.png" loading="lazy"
+                                  width="1" height="1" data-size="default" class=" imageTransition">
+                              </div>
+                              <div class="m-name">AMAZER 4G LIFE</div>
+                              <div class="v-name">145/80 R13</div>
+                              <div class="tyre-sold-rating d-flex align-items-center">
+                                <div class="rating-bg d-flex align-items-center">
+                                  <i class="bi bi-star-fill"></i>
+                                  <span>4</span>
+                                </div>
+                                <div class="review-text">320 Review</div>
+                              </div>
+
+                              <div class="price-wrapper d-flex align-items-center">
+                                <span class="curency-symbol">₹</span>
+                                3,401
+                              </div>
+                              <div class="offer-text">Offer available</div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <ul class="features d-flex align-items-center">
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/tyre.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Tubeless</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25" src="./assets/images/fuel.png"
+                                    loading="eager" data-lazy="true">
+                                </span>
+
+                                <span class="feat-text">Fuel efficient</span>
+                              </li>
+                              <li class="d-flex flex-column">
+                                <span class="feature-icons-wrap">
+                                  <img decoding="async" alt="icon" width="25" height="25"
+                                    src="./assets/images/rainy.png" loading="eager" data-lazy="true">
+                                </span>
+                                <span class="feat-text">Wet Grip </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-more-btnwrapper">
+                  <button id="viewmore-dealer" class="tyreflex-m-button">
+                    <span class="button__icon-wrapper">
+                      <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                        width="10">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+
+                      <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    View More
+                  </button>
+                </div>
+              </div>
+
+              <!-- Rating & Review -->
+              <div class="review-wrapper bg-border-shadow" id="review-wrap">
+                <h4 class="sub-heading">Rating & Review</h4>
+                <div class="dealer-review-head">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-3 col-xs-6 col-lg-3 mob-col1">
+                      <div class="rating-middle-section">
+                        <div class="rating-text">
+                          <span class="rating">4.5</span> /5
+                        </div>
+                        <div class="rating-star d-flex align-items-center">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="user-total-review">140 Ratings & 1 Review</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-lg-6 mob-col2">
+                      <div class="rating-review-right d-flex align-items-center w-100 flex-column">
+                        <div class="rating-review-inner d-flex align-items-center w-100">
+                          <div class="rating-num">5</div>
+                          <span><i class="bi bi-star-fill"></i></span>
+                          <div class="rating-progress w-100">
+                            <div class="rating-percentage-row w-100 d-flex align-items-center">
+                              <div class="meter w-100">
+                                <span data-progress="95" style="width:0;"></span>
+                              </div>
+                              <div class="rating-percentage">
+                                95%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-review-inner d-flex align-items-center w-100">
+                          <div class="rating-num">4</div>
+                          <span><i class="bi bi-star-fill"></i></span>
+                          <div class="rating-progress w-100">
+                            <div class="rating-percentage-row w-100 d-flex align-items-center">
+                              <div class="meter w-100">
+                                <span data-progress="1" style="width:0;"></span>
+                              </div>
+                              <div class="rating-percentage">
+                                1%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-review-inner d-flex align-items-center w-100">
+                          <div class="rating-num">3</div>
+                          <span><i class="bi bi-star-fill"></i></span>
+                          <div class="rating-progress w-100">
+                            <div class="rating-percentage-row w-100 d-flex align-items-center">
+                              <div class="meter w-100">
+                                <span data-progress="1" style="width:0;"></span>
+                              </div>
+                              <div class="rating-percentage">
+                                1%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-review-inner d-flex align-items-center w-100">
+                          <div class="rating-num">2</div>
+                          <span><i class="bi bi-star-fill"></i></span>
+                          <div class="rating-progress w-100">
+                            <div class="rating-percentage-row w-100 d-flex align-items-center">
+                              <div class="meter w-100">
+                                <span data-progress="0" style="width:0;"></span>
+                              </div>
+                              <div class="rating-percentage">
+                                0%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="rating-review-inner d-flex align-items-center w-100">
+                          <div class="rating-num">1</div>
+                          <span><i class="bi bi-star-fill"></i></span>
+                          <div class="rating-progress w-100">
+                            <div class="rating-percentage-row w-100 d-flex align-items-center">
+                              <div class="meter w-100">
+                                <span data-progress="1" style="width:0;"></span>
+                              </div>
+                              <div class="rating-percentage">
+                                1%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 col-lg-3 mob-col3">
+                      <div class="have-review d-flex justify-content-center align-items-center flex-column">
+                        <h5>Have you used this dealer service?</h5>
+                        <a href="#" title="review this dealer">Review</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="reviewsContainer" class="reviews-container"></div>
+                <button id="viewMoreRevieBtn" class="view-more-reviewbtn btn">
+                  See all reviews
+                </button>
+                <!-- Modal Container -->
+                <div id="reviewModal" class="review-modal">
+                  <div class="modal-backdrop"></div>
+                  <div class="review-modal-content">
+                    <span class="close-btn"><i class="bi bi-x-lg"></i></span>
+                    <div id="modalReviewContent" class="modal-review-content"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="tyre-flex-footer">
+      <div class="upper-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 col-lg-3">
+              <div class="upper-footer-card borde-left">
+                <img src="./assets/images/reward.png" decoding="async" loading="lazy" alt="">
+                <div class="up-topheading">India’s #1</div>
+                <p>Largest Typre portal</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-lg-3">
+              <div class="upper-footer-card">
+                <img src="./assets/images/lock.png" decoding="async" loading="lazy" alt="100% Secure Payments">
+                <div class="up-topheading">100% Secure Payments</div>
+                <p>Moving your card details to a much more </p>
+                <p>secured place </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-lg-3">
+              <div class="upper-footer-card">
+                <img src="./assets/images/cyber-security.png" decoding="async" loading="lazy" alt="TrustPay">
+                <div class="up-topheading">TrustPay</div>
+                <p>100% Payment Protection. Easy</p>
+                <p>Return Policy </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-6 col-lg-3">
+              <div class="upper-footer-card">
+                <img src="./assets/images/customer-service.png" decoding="async" loading="lazy" alt="">
+                <div class="up-topheading">Help Center</div>
+                <p>Got a question? Look no further.</p>
+                <p>Browse our FAQs or submit your query here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="footer-column">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Carrers</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="footer-column">
+                <h5>Policy</h5>
+                <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Shipping & Return Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-column">
+                <h5>Popular Links</h5>
+                <ul>
+                  <li><a href="#">Find tyre dealers</a></li>
+                  <li><a href="#">Are you a tyre dealer</a></li>
+                  <li><a href="#">Shipping & Return Policy</a></li>
+                  <li><a href="#">Commercial tyres</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="newsletter">
+                <h5>Have a question about Tyres?</h5>
+                <p>Get an answer in 24 hours from our experts.</p>
+                <form action="#" class="form-elment">
+                  <input type="text" placeholder="Ask or search your question...." class="form-control">
+                  <button id="viewMoreRevieBtn" class="tyreflex-m-button">
+                    <span class="button__icon-wrapper">
+                      <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                        width="10">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+
+                      <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy">
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </span>
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+              <p>©2024 TyrePlex Technologies & Commerce Pvt. Ltd. All Rights Reserved.</p>
+              <div class="follow-us-footer d-flex align-items-center">
+                <span>Follow and Connect with us :</span>
+                 <a href="#"><i class="bi bi-facebook"></i></a>
+                 <a href="#"><i class="bi bi-instagram"></i></a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- review modal -->
+
+  <!-- js CDN  and file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script type="module" src="./assets/js/script.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+/*---------- color ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ed1c24;
+  --font-family: "Manrope", sans-serif;
+  --font-size-base: 14px;
+  --font-heading: 20px;
+  --font-sub-heading: 18px;
+  --font-large-heading: 30px;
+  --border-small-radius: 4px;
+  --border-big-radius: 16px;
+  --border-large-radius: 10rem;
+  --white: #ffffff;
+  --text-color: #130f26;
+  --gray-color: #f2f4f7;
+  --light-text-color: #6c6c6c;
+  --light-red-bg: #ffebed;
+  --gradient: linear-gradient(265deg, #ef4123, #ee3f25 48%, #d11450);
+}
+
+html,
+body {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-color);
+  color: var(--text-color);
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+figure,
+a,
+li {
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+main {
+  overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.pl-0 {
+  padding-left: 0;
+}
+li{
+    list-style-type: none;
+}
+/*------------ heading and text css -------------*/
+.heading {
+  font-size: var(--font-heading);
+  font-weight: 800;
+  color: var(--text-color);
+}
+.sub-heading{
+   font-size: var(--font-sub-heading);
+   font-weight: 600;
+   color: var(--text-color);
+   margin-bottom: 15px;
+}
+.para-text {
+  font-size: var(--font-size-base);
+  color: var(--light-text-color);
+}
+
+.back-btn {
+  display: none;
+  cursor: pointer;
+}
+.bg-border-shadow{
+    border-radius: var(--border-big-radius);
+    background-color: var(--white);
+    padding: 20px;
+    border:1px solid rgba(36,39,44,.1);
+    box-shadow: 0 1px 5px rgba(36,39,44,.1);
+    margin-bottom: 20px;
+    
+}
+/*------------------------------------
+     Tyreples main button
+-------------------------------------- */
+
+.tyreflex-m-button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 8px 16px 8px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  color: var(--secondary-color);
+  background-color: var(--white);
+}
+
+.tyreflex-m-button .button__icon-wrapper {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  color: var(--white);
+  background: var(--gradient);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.tyreflex-m-button:hover {
+  background: var(--gradient);
+  color: var(--white);
+}
+
+.tyreflex-m-button:hover .button__icon-wrapper {
+  color: var(--secondary-color);
+  background: var(--white);
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.tyreflex-m-button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.tyreflex-m-button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+/* Only display the back button on mobile devices */
+@media (max-width: 992px) {
+  .dropdown-menu.show .back-btn {
+    display: block;
+    background: var(--gray-color);
+    border-radius: 0;
+    font-weight: 800;
+  }
+}
+
+/* Ensure dropdown opens on hover for desktop */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+#dealer-info-navigation {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 9999;
+    display: none;
+}
+
+.swiper-wrapper .swiper-slide{
+    padding: 10px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-button-next, .swiper-button-prev{
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,.25);
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     background: var(--white);
+     color: var(--primary-color);
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{ 
+    font-size: 20px;
+  }
+  .meter {
+    background: rgba(100,100,100,0.15);
+    -webkit-border-radius:  var(
+      --border-large-radius);
+    -moz-border-radius:  var(
+      --border-large-radius);
+    border-radius: var(
+    --border-large-radius);
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    display: block;
+    height: 4px;
+    position: relative;
+  }
+
+  .meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(245, 166, 35);
+    position: relative;
+    overflow: hidden;
+    transition: width 2s ease-out;
+  }
+  .desktop-hide{
+    display: none;
+  }
+
+  .modal-open .reviewmodal{
+    display: block;
+    opacity: 1;
+  }
+  .modal-open .reviewmodal.fade .modal-dialog{ 
+    transform: translate(0, 0px);
+  }
+
+
+  
